@@ -1,0 +1,6 @@
+nums = input("enter list of numbers to square separated by space: ")
+nums = nums.split()
+nums = list(map(int,nums))
+filtered_nums = filter(lambda x: x>10 and x< 50, nums)
+squared = list(map(lambda x: x**2, filtered_nums))
+print(squared)

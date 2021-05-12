@@ -1,0 +1,5 @@
+num_list = input("Enter list of numbers seperated by commas: ").split(",")
+num_list = list(map(int,num_list))
+odd_list = list(map(lambda x: x%2 == 1, num_list))
+is_odd = all(odd_list)
+print(is_odd)
